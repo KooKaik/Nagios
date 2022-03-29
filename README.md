@@ -21,7 +21,7 @@ Répertoire Nagios :
 
 ### Liste des commandes
 
-Check_Ping :
+check_ping :
 
 ```
 cd /usr/local/nagios/libexec/
@@ -33,7 +33,7 @@ cd /usr/local/nagios/libexec/
 
 ---
 
-Check Ping local avec Warning à 40ms et Critical à 30% :
+check_ping local avec Warning à 40ms et Critical à 30% :
 
 ```
 cd /usr/local/nagios/libexec/
@@ -46,7 +46,7 @@ PING OK -  Paquets perdus = 0%, RTA = 0.07 ms|rta=0.068000ms;40.000000;40.000000
 
 ---
 
-Check_Ping sur www.google.fr avec Warming à 5ms et Critical à 20ms :
+check_ping sur www.google.fr avec Warming à 5ms et Critical à 20ms :
 
 ```
 cd /usr/local/nagios/libexec/
@@ -63,6 +63,8 @@ PING OK -  Paquets perdus = 0%, RTA = 19.44 ms|rta=19.438000ms;20.000000;20.0000
 ```
 
 ---
+
+### Supervision du serveur
 
 Créer une commande check_ping :
 - Se rendre dans [commands.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/commands.cfg)
@@ -84,4 +86,23 @@ cfg_file=/usr/local/nagios/etc/objects/serveur_nagios.cfg
 
 Vérifier le bon fonctionnement sur [l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png) :
 - On peut voir qu'un service "PING" est associé à l'hôte "serveur_nagios"
+
+## TP 3
+
+### Coté Client
+
+Une VM clients linux a été mise en place pour ce TP (Ubuntu Server 20.04)
+
+La procédure suivante a été suivi afin d'installer NRPE sur le client:
+[Procédure NRPE](https://support.nagios.com/kb/article/nrpe-how-to-install-nrpe-v4-from-source-515.html)
+
+### Coté Serveur
+
+- Création du fichier de configuration [linux_clients.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/linux_clients.cfg)
+
+- Déclaration du fichier dans [cgi.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/cgi.cfg)
+```
+cfg_file=/usr/local/nagios/etc/objects/linux-clients.cfg
+```
+
 
