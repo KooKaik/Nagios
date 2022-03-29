@@ -109,7 +109,7 @@ La procédure suivante a été suivi afin d'installer NRPE sur le client
 
 ### Coté Serveur
 
-- Création du fichier de configuration [linux_clients.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/linux_clients.cfg)
+- Création du fichier de configuration [linux-clients.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/linux-clients.cfg)
 
 - Déclaration du fichier dans [nagios.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/nagios.cfg)
 ```
@@ -120,7 +120,7 @@ Vérification sur l'interface web
 ![Hotes](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Hosts.png)
 ![Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
 
-On peut voir qu'un nouvel hote est apparu (linux-clients) et que plusieurs services sont associés à celui-ci
+On peut voir qu'un nouvel hote est apparu (nagios-clients-linux) et que plusieurs services sont associés à celui-ci
 
 ## TP 4
 
