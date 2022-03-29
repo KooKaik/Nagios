@@ -2,7 +2,7 @@
 
 Nagios Core a été installé sur un serveur Ubuntu 20.04
 
-Voir Screen : NAGIOSCORE.png
+[Voir l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/NagiosCore.png)
 
 Définir les alias de commande :
 - Un alias de commande permet d'associer une commande à un nom afin d'éviter de la taper plusieurs fois
@@ -65,7 +65,7 @@ PING OK -  Paquets perdus = 0%, RTA = 19.44 ms|rta=19.438000ms;20.000000;20.0000
 ---
 
 Créer une commande check_ping :
-- Se rendre dans [Lien](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/commands.cfg "commands.cfg")
+- Se rendre dans [commands.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/commands.cfg)
 ```
 define command {
 
@@ -75,10 +75,10 @@ define command {
 ```
 
 Supervisez son serveur nagios en créant un fichier "serveur_nagios.cfg" :
-- Création du fichier de configuration [Lien](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/serveur_nagios.cfg "serveur_nagios.cfg")
+- Création du fichier de configuration [serveur_nagios.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/serveur_nagios.cfg)
 
-- Déclaration du fichier dans cgi.cfg [Lien](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/cgi.cfg "cgi.cfg")
+- Déclaration du fichier dans [cgi.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/cgi.cfg)
 
-Vérifier le bon fonctionnement sur [Lien](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png "l'interface web") :
+Vérifier le bon fonctionnement sur [l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png) :
 - On peut voir qu'un service "PING" est associé à l'hôte "serveur_nagios"
 
