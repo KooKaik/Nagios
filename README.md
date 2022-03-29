@@ -116,7 +116,7 @@ La procédure suivante a été suivi afin d'installer NRPE sur le client
 cfg_file=/usr/local/nagios/etc/objects/linux-clients.cfg
 ```
 
-Vérification sur l'interface web
+- Vérification sur l'interface web
 ![Hotes](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Hosts.png)
 ![Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
 
@@ -124,4 +124,31 @@ On peut voir qu'un nouvel hote est apparu (nagios-clients-linux) et que plusieur
 
 ## TP 4
 
+### Coté Client
 
+Un serveur LAMP a été mis en place sur une VM Linux (Ubuntu Server 20.04) avec une page simple
+
+### Coté Serveur
+
+- Création de la commande dans [commands.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/commands.cfg)
+```
+define command {
+    
+    command_name    check-http-webserver
+    command_line    $USER1$/check_http -H $HOSTADDRESS$ -w $ARG1$ -c $ARG2$ -u $ARG3$ -p 80
+}
+```
+
+- Création du fichier de configuration [webserver.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/webserver.cfg)
+
+- Déclaration du fichier dans [nagios.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/nagios.cfg)
+```
+cfg_file=/usr/local/nagios/etc/objects/webserver.cfg
+```
+
+- Vérification sur l'interface web
+![Hotes](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Hosts.png)
+![Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
+
+On peut voir qu'un nouvel hote est apparu (my_webserver) et qu'un service HTTP est associé à celui-ci
+Il surveille la page d'accueil (index.html) du serveur web
