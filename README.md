@@ -22,16 +22,27 @@ Répertoire Nagios :
 ### Liste des commandes
 
 Check_Ping :
-- cd /usr/local/nagios/libexec/
-- ./check_ping
+
+```
+cd /usr/local/nagios/libexec/
+```
+
+```
+./check_ping
+```
 
 ---
 
 Check Ping local avec Warning à 40ms et Critical à 30% :
-- cd /usr/local/nagios/libexec/
 
-- ./check_ping -H 192.168.116.129 -w 40,10% -c 40,30%
-- Résultat -> PING OK -  Paquets perdus = 0%, RTA = 0.07 ms|rta=0.068000ms;40.000000;40.000000;0.000000 pl=0%;10;30;0
+```
+cd /usr/local/nagios/libexec/
+```
+
+```
+./check_ping -H 192.168.116.129 -w 40,10% -c 40,30%
+PING OK -  Paquets perdus = 0%, RTA = 0.07 ms|rta=0.068000ms;40.000000;40.000000;0.000000 pl=0%;10;30;0
+```
 
 ---
 
@@ -48,24 +59,26 @@ CRITICAL - Network Unreachable
 
 ```
 ./check_ping -H 8.8.8.8 -w 5,10% -c 20,30%
-- Résultat -> PING OK -  Paquets perdus = 0%, RTA = 19.44 ms|rta=19.438000ms;20.000000;20.000000;0.000000 pl=0%;10;30;0
+PING OK -  Paquets perdus = 0%, RTA = 19.44 ms|rta=19.438000ms;20.000000;20.000000;0.000000 pl=0%;10;30;0
 ```
 
 ---
 
 Créer une commande check_ping :
-- Se rendre dans commands.cfg
+- Se rendre dans [Lien](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/commands.cfg "commands.cfg")
 ```
-a
-a
-a
+define command {
+
+    command_name    check_ping_localhost
+    command_line /usr/local/nagios/libexec/check_ping -H localhost -w 40,40% -c 60,60%
+}
 ```
 
 Supervisez son serveur nagios en créant un fichier "serveur_nagios.cfg" :
-- Création du fichier de configuration
+- Création du fichier de configuration [Lien](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/serveur_nagios.cfg "serveur_nagios.cfg")
 
-- Déclaration du fichier dans cgi.cfg
+- Déclaration du fichier dans cgi.cfg [Lien](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/cgi.cfg "cgi.cfg")
 
-Vérifier le bon fonctionnement sur l'interface web :
-- 
+Vérifier le bon fonctionnement sur [Lien](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png "l'interface web") :
+- On peut voir qu'un service "PING" est associé à l'hôte "serveur_nagios"
 
