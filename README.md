@@ -1,3 +1,12 @@
+# TPs Monitoring Nagios
+
+## Sommaire
+
+- TP 1
+- TP 2
+- TP 3
+- TP 4
+
 ## TP 1
 
 Nagios Core a été installé sur un serveur Ubuntu 20.04
@@ -107,7 +116,11 @@ cfg_file=/usr/local/nagios/etc/objects/linux-clients.cfg
 ```
 
 Vérification sur l'interface web
-- [Hotes](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Hosts.png)
-- [Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
+- ![Hotes](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Hosts.png)
+- ![Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
 
 On peut voir qu'un nouvel hote est apparu (linux-clients) et que plusieurs services sont associés à celui-ci
+
+## TP 4
+
+
