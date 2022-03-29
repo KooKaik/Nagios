@@ -11,7 +11,7 @@
 
 Nagios Core a été installé sur un serveur Ubuntu 20.04
 
-[Voir l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/NagiosCore.png)
+![Voir l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/NagiosCore.png)
 
 Définir les alias de commande :
 - Un alias de commande permet d'associer une commande à un nom afin d'éviter de la taper plusieurs fois
@@ -93,7 +93,7 @@ Supervisez son serveur nagios en créant un fichier "serveur_nagios.cfg" :
 cfg_file=/usr/local/nagios/etc/objects/serveur_nagios.cfg
 ```
 
-Vérifier le bon fonctionnement sur [l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png) :
+Vérifier le bon fonctionnement sur ![l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png) :
 - On peut voir qu'un service "PING" est associé à l'hôte "serveur_nagios"
 
 ## TP 3
@@ -116,8 +116,8 @@ cfg_file=/usr/local/nagios/etc/objects/linux-clients.cfg
 ```
 
 Vérification sur l'interface web
-- ![Hotes](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Hosts.png)
-- ![Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
+![Hotes](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Hosts.png)
+![Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
 
 On peut voir qu'un nouvel hote est apparu (linux-clients) et que plusieurs services sont associés à celui-ci
 
