@@ -47,7 +47,12 @@ Check_Ping sur www.google.fr avec Warming à 5ms et Critical à 20ms :
 ---
 
 Créer une commande check_ping :
-- 
+- Se rendre dans commands.cfg
+```
+a
+a
+a
+```
 
 Supervisez son serveur nagios en créant un fichier "serveur_nagios.cfg" :
 - Création du fichier de configuration
