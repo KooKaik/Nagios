@@ -93,7 +93,8 @@ Vérifier le bon fonctionnement sur [l'interface web](https://github.com/KooKaik
 
 Une VM clients linux a été mise en place pour ce TP (Ubuntu Server 20.04)
 
-La procédure suivante a été suivi afin d'installer NRPE sur le client:
+La procédure suivante a été suivi afin d'installer NRPE sur le client
+
 [Procédure NRPE](https://support.nagios.com/kb/article/nrpe-how-to-install-nrpe-v4-from-source-515.html)
 
 ### Coté Serveur
@@ -105,4 +106,8 @@ La procédure suivante a été suivi afin d'installer NRPE sur le client:
 cfg_file=/usr/local/nagios/etc/objects/linux-clients.cfg
 ```
 
+Vérification sur l'interface web
+- [Hotes](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Hosts.png)
+- [Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
 
+On peut voir qu'un nouvel hote est apparu (linux-clients) et que plusieurs services sont associés à celui-ci
