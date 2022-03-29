@@ -78,6 +78,9 @@ Supervisez son serveur nagios en créant un fichier "serveur_nagios.cfg" :
 - Création du fichier de configuration [serveur_nagios.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/serveur_nagios.cfg)
 
 - Déclaration du fichier dans [cgi.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/cgi.cfg)
+```
+cfg_file=/usr/local/nagios/etc/objects/serveur_nagios.cfg
+```
 
 Vérifier le bon fonctionnement sur [l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png) :
 - On peut voir qu'un service "PING" est associé à l'hôte "serveur_nagios"
