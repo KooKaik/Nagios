@@ -88,7 +88,7 @@ define command {
 Supervisez son serveur nagios en créant un fichier "serveur_nagios.cfg" :
 - Création du fichier de configuration [serveur_nagios.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/serveur_nagios.cfg)
 
-- Déclaration du fichier dans [cgi.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/cgi.cfg)
+- Déclaration du fichier dans [nagios.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/nagios.cfg)
 ```
 cfg_file=/usr/local/nagios/etc/objects/serveur_nagios.cfg
 ```
@@ -111,7 +111,7 @@ La procédure suivante a été suivi afin d'installer NRPE sur le client
 
 - Création du fichier de configuration [linux_clients.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/objects/linux_clients.cfg)
 
-- Déclaration du fichier dans [cgi.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/cgi.cfg)
+- Déclaration du fichier dans [nagios.cfg](https://github.com/KooKaik/Nagios/blob/master/Fichiers%20de%20Congifuration/nagios.cfg)
 ```
 cfg_file=/usr/local/nagios/etc/objects/linux-clients.cfg
 ```
