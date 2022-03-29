@@ -2,11 +2,12 @@
 
 ## Sommaire
 
-- TP 1
-- TP 2
-- TP 3
-- TP 4
+- [TP 1](#tp-1)
+- [TP 2](#tp-2)
+- [TP 3](#tp-3)
+- [TP 4](#tp-4)
 
+---
 ## TP 1
 
 Nagios Core a été installé sur un serveur Ubuntu 20.04
@@ -26,6 +27,7 @@ Répertoire Nagios :
 - share -> Fichier de l'interface Web Nagios Core
 - var -> Fichier variable comme les logs
 
+---
 ## TP 2
 
 ### Liste des commandes
@@ -97,6 +99,7 @@ Vérifier le bon fonctionnement sur l'interface web
 ![interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
 On peut voir qu'un service "PING" est associé à l'hôte "serveur_nagios"
 
+---
 ## TP 3
 
 ### Coté Client
@@ -122,6 +125,7 @@ cfg_file=/usr/local/nagios/etc/objects/linux-clients.cfg
 
 On peut voir qu'un nouvel hote est apparu (nagios-clients-linux) et que plusieurs services sont associés à celui-ci
 
+---
 ## TP 4
 
 ### Coté Client
