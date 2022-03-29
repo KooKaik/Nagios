@@ -93,7 +93,8 @@ Supervisez son serveur nagios en créant un fichier "serveur_nagios.cfg" :
 cfg_file=/usr/local/nagios/etc/objects/serveur_nagios.cfg
 ```
 
-Vérifier le bon fonctionnement sur ![l'interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png) :
+Vérifier le bon fonctionnement sur l'interface web
+![interface web](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png) :
 - On peut voir qu'un service "PING" est associé à l'hôte "serveur_nagios"
 
 ## TP 3
