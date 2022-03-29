@@ -30,15 +30,18 @@ Check Ping local avec Warning à 40ms et Critical à 30% :
 - cd /usr/local/nagios/libexec/
 
 - ./check_ping -H 192.168.116.129 -w 40,10% -c 40,30%
+
 Résultat -> PING OK -  Paquets perdus = 0%, RTA = 0.07 ms|rta=0.068000ms;40.000000;40.000000;0.000000 pl=0%;10;30;0
 
 Check_Ping sur www.google.fr avec Warming à 5ms et Critical à 20ms :
 - cd /usr/local/nagios/libexec/
 
 - ./check_ping -H www.google.fr -w 5,10% -c 20,30%
+
 Résultat -> CRITICAL - Network Unreachable
 
 - ./check_ping -H 8.8.8.8 -w 5,10% -c 20,30%
+
 Résultat -> PING OK -  Paquets perdus = 0%, RTA = 19.44 ms|rta=19.438000ms;20.000000;20.000000;0.000000 pl=0%;10;30;0
 
 
