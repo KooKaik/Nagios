@@ -151,4 +151,5 @@ cfg_file=/usr/local/nagios/etc/objects/webserver.cfg
 ![Services](https://github.com/KooKaik/Nagios/blob/master/Capture%20Ecran/Services.png)
 
 On peut voir qu'un nouvel hote est apparu (my_webserver) et qu'un service HTTP est associé à celui-ci
+
 Il surveille la page d'accueil (index.html) du serveur web
